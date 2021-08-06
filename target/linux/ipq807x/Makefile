@@ -12,10 +12,9 @@ KERNEL_PATCHVER:=5.10
 
 include $(INCLUDE_DIR)/target.mk
 DEFAULT_PACKAGES += \
-	kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom \
 	kmod-leds-gpio kmod-gpio-button-hotplug \
 	ath11k-firmware-ipq8074 kmod-ath11k-ahb \
 	wpad-openssl kmod-qca-nss-dp kmod-qca-nss-drv-64 kmod-qca-nss-drv-pppoe-64 kmod-qca-nss-ecm-64 nss-firmware-ipq8074 \
-	autocore-arm htop luci-app-adbyby-plus luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-zerotier
+	autocore-arm htop
 
 $(eval $(call BuildTarget))
